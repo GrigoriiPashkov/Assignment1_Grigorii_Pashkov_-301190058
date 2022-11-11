@@ -7,20 +7,34 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <title>{{title}}</title>
+    <style>
+      .roundimg { width: 60%; border-radius: 50%; }
+    </style>
   </head>
   <body>
+
     <nav class="blue darken-4">
       <div class="nav-wrapper">
-        <a href="/" class="brand-logo">Home Page</a>
+        <img src="/images/img1.jpg" alt="Logo" />
+        <a href="/" class="logo"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/">Home Page</a></li>
-          <li><a href="/sa">sa</a></li>
+          <li><a href="/aboutMe">About Me</a></li>
+          <li><a href="/contacts">Contacts</a></li>
+          <li><a href="/projects">My Projects</a></li>
+          <li><a href="/services">My Services</a></li>
         </ul>
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container text-center my-5">
       {{{body}}}
     </div>
   </body>
